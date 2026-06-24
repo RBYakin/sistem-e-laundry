@@ -1,0 +1,6 @@
+{
+  "name": "E-Laundry Smart System",
+  "description": "Sistem Manajemen Laundry Terintegrasi dengan fitur transaksi, stok, laporan bulanan, nota otomatis, dashboard grafik, serta multi-role login untuk Admin, Pegawai, dan Pelanggan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

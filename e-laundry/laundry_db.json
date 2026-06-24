@@ -1,0 +1,380 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "username": "admin",
+      "nama": "Alex Saputra (Admin)",
+      "role": "admin",
+      "no_telp": "081234567890",
+      "alamat": "Jl. Merdeka No. 10, Jakarta",
+      "created_at": "2026-04-01T00:00:00Z"
+    },
+    {
+      "id": "usr-2",
+      "username": "pegawai",
+      "nama": "Siti Rahma (Pegawai)",
+      "role": "pegawai",
+      "no_telp": "081298765432",
+      "alamat": "Jl. Melati No. 5, Jaksel",
+      "created_at": "2026-04-05T00:00:00Z"
+    },
+    {
+      "id": "usr-3",
+      "username": "budi",
+      "nama": "Budi Santoso",
+      "role": "pelanggan",
+      "no_telp": "085712345678",
+      "alamat": "Rawamangun Regency Blok C4",
+      "created_at": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": "usr-4",
+      "username": "ani",
+      "nama": "Anisa Kirana",
+      "role": "pelanggan",
+      "no_telp": "081322334455",
+      "alamat": "Apartemen Green Pramuka Tower B-10",
+      "created_at": "2026-05-05T14:30:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "nama": "Cuci Setrika Reguler",
+      "jenis": "kiloan",
+      "harga": 7000,
+      "satuan": "kg",
+      "deskripsi": "Pencucian + setrika rapi + pewangi (3 hari kerja)"
+    },
+    {
+      "id": "prod-2",
+      "nama": "Cuci Setrika Ekspres",
+      "jenis": "kiloan",
+      "harga": 12000,
+      "satuan": "kg",
+      "deskripsi": "Pencucian + setrika rapi ekspres (24 jam selesai)"
+    },
+    {
+      "id": "prod-3",
+      "nama": "Setrika Saja Reguler",
+      "jenis": "kiloan",
+      "harga": 5000,
+      "satuan": "kg",
+      "deskripsi": "Setrika rapi + lipat + pewangi (2 hari kerja)"
+    },
+    {
+      "id": "prod-4",
+      "nama": "Bed Cover Sedang/Besar",
+      "jenis": "satuan",
+      "harga": 25000,
+      "satuan": "pcs",
+      "deskripsi": "Cuci dan pengeringan higienis bed cover"
+    },
+    {
+      "id": "prod-5",
+      "nama": "Helm Sepeda / Motor",
+      "jenis": "satuan",
+      "harga": 15000,
+      "satuan": "pcs",
+      "deskripsi": "Cuci helm deep cleaning antibakteri"
+    },
+    {
+      "id": "prod-6",
+      "nama": "Sepatu Kanvas / Kets",
+      "jenis": "satuan",
+      "harga": 20000,
+      "satuan": "pcs",
+      "deskripsi": "Pencucian sepatu khusus untuk meremajakan warna"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "inv-1",
+      "nama_barang": "Deterjen Liquid Lavender",
+      "stok": 12,
+      "satuan": "liter",
+      "deskripsi": "Deterjen cair premium aroma lavender",
+      "restock_date": "2026-05-10T08:00:00Z"
+    },
+    {
+      "id": "inv-2",
+      "nama_barang": "Parfum Sakura Premium",
+      "stok": 25,
+      "satuan": "botol",
+      "deskripsi": "Pewangi finishing sakura tahan lama",
+      "restock_date": "2026-05-12T10:30:00Z"
+    },
+    {
+      "id": "inv-3",
+      "nama_barang": "Plastik Packing Kiloan (Medium)",
+      "stok": 8,
+      "satuan": "pack",
+      "deskripsi": "Plastik pembungkus cucian kiloan",
+      "restock_date": "2026-05-15T11:00:00Z"
+    },
+    {
+      "id": "inv-4",
+      "nama_barang": "Tag Label Gantung",
+      "stok": 150,
+      "satuan": "pcs",
+      "deskripsi": "Tag kertas penanda id cucian pelanggan",
+      "restock_date": "2026-05-01T09:00:00Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tcoq17h",
+      "invoice_id": "INV-260515-3211",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Rawamangun Regency Blok C4",
+      "cashier_id": "usr-2",
+      "cashier_name": "Siti Rahma (Pegawai)",
+      "items": [
+        {
+          "product_id": "prod-1",
+          "nama_produk": "Cuci Setrika Reguler",
+          "harga": 7000,
+          "qty": 5,
+          "subtotal": 35000
+        },
+        {
+          "product_id": "prod-4",
+          "nama_produk": "Bed Cover Sedang/Besar",
+          "harga": 25000,
+          "qty": 1,
+          "subtotal": 25000
+        }
+      ],
+      "total_harga": 60000,
+      "status": "diambil",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-12T03:15:00.000Z",
+      "finished_at": "2026-06-15T08:00:00.000Z",
+      "paid_at": "2026-06-12T03:20:00.000Z"
+    },
+    {
+      "id": "yjvizuk",
+      "invoice_id": "INV-260518-8422",
+      "pelanggan_id": "usr-4",
+      "customer_name": "Anisa Kirana",
+      "customer_phone": "081322334455",
+      "customer_address": "Apartemen Green Pramuka Tower B-10",
+      "cashier_id": "usr-2",
+      "cashier_name": "Siti Rahma (Pegawai)",
+      "items": [
+        {
+          "product_id": "prod-2",
+          "nama_produk": "Cuci Setrika Ekspres",
+          "harga": 12000,
+          "qty": 4,
+          "subtotal": 48000
+        }
+      ],
+      "total_harga": 48000,
+      "status": "diambil",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "cod",
+      "created_at": "2026-06-15T07:00:00.000Z",
+      "finished_at": "2026-06-16T07:00:00.000Z",
+      "paid_at": "2026-06-16T10:30:00.000Z"
+    },
+    {
+      "id": "9rc0fgw",
+      "invoice_id": "INV-260520-1122",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Rawamangun Regency Blok C4",
+      "cashier_id": "usr-1",
+      "cashier_name": "Alex Saputra (Admin)",
+      "items": [
+        {
+          "product_id": "prod-6",
+          "nama_produk": "Sepatu Kanvas / Kets",
+          "harga": 20000,
+          "qty": 2,
+          "subtotal": 40000
+        }
+      ],
+      "total_harga": 40000,
+      "status": "selesai",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-17T02:30:00.000Z",
+      "finished_at": "2026-06-20T04:00:00.000Z",
+      "paid_at": "2026-06-17T03:00:00.000Z"
+    },
+    {
+      "id": "va4t6rk",
+      "invoice_id": "INV-260522-8323",
+      "pelanggan_id": "usr-4",
+      "customer_name": "Anisa Kirana",
+      "customer_phone": "081322334455",
+      "customer_address": "Apartemen Green Pramuka Tower B-10",
+      "cashier_id": "usr-2",
+      "cashier_name": "Siti Rahma (Pegawai)",
+      "items": [
+        {
+          "product_id": "prod-1",
+          "nama_produk": "Cuci Setrika Reguler",
+          "harga": 7000,
+          "qty": 3.5,
+          "subtotal": 24500
+        },
+        {
+          "product_id": "prod-5",
+          "nama_produk": "Helm Sepeda / Motor",
+          "harga": 15000,
+          "qty": 1,
+          "subtotal": 15000
+        }
+      ],
+      "total_harga": 39500,
+      "status": "proses",
+      "status_pembayaran": "belum_bayar",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-19T04:10:00.000Z",
+      "finished_at": null,
+      "paid_at": null
+    },
+    {
+      "id": "2y86sdf",
+      "invoice_id": "INV-260523-9311",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Rawamangun Regency Blok C4",
+      "cashier_id": "usr-2",
+      "cashier_name": "Siti Rahma (Pegawai)",
+      "items": [
+        {
+          "product_id": "prod-2",
+          "nama_produk": "Cuci Setrika Ekspres",
+          "harga": 12000,
+          "qty": 6,
+          "subtotal": 72000
+        }
+      ],
+      "total_harga": 72000,
+      "status": "proses",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-20T08:45:00.000Z",
+      "finished_at": null,
+      "paid_at": "2026-06-20T08:50:00.000Z"
+    },
+    {
+      "id": "bkzf1ba",
+      "invoice_id": "INV-260524-2201",
+      "pelanggan_id": null,
+      "customer_name": "Ny. Hermawan (Umum)",
+      "customer_phone": "081223344556",
+      "customer_address": "Jl. Pemuda No. 12",
+      "cashier_id": "usr-2",
+      "cashier_name": "Siti Rahma (Pegawai)",
+      "items": [
+        {
+          "product_id": "prod-1",
+          "nama_produk": "Cuci Setrika Reguler",
+          "harga": 7000,
+          "qty": 8,
+          "subtotal": 56000
+        }
+      ],
+      "total_harga": 56000,
+      "status": "masuk",
+      "status_pembayaran": "belum_bayar",
+      "metode_pembayaran": "cod",
+      "created_at": "2026-06-20T19:30:00.000Z",
+      "finished_at": null,
+      "paid_at": null
+    },
+    {
+      "id": "tx-1awbqx1",
+      "invoice_id": "INV-260621-3856",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Perumahan Gili Residence Blok C4",
+      "cashier_id": "online",
+      "cashier_name": "Online Orders",
+      "items": [
+        {
+          "product_id": "prod-1",
+          "nama_produk": "Cuci Setrika Reguler",
+          "harga": 7000,
+          "qty": 5,
+          "subtotal": 35000
+        }
+      ],
+      "total_harga": 35000,
+      "status": "diambil",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-21T07:28:35.607Z",
+      "finished_at": "2026-06-21T07:29:54.007Z",
+      "paid_at": "2026-06-21T07:29:24.879Z"
+    },
+    {
+      "id": "tx-ge0oqa7",
+      "invoice_id": "INV-260623-7576",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Rawamangun Regency Blok C4",
+      "cashier_id": "online",
+      "cashier_name": "Online Orders",
+      "items": [
+        {
+          "product_id": "prod-2",
+          "nama_produk": "Cuci Setrika Ekspres",
+          "harga": 12000,
+          "qty": 1,
+          "subtotal": 12000
+        }
+      ],
+      "total_harga": 12000,
+      "status": "masuk",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-23T04:57:33.214Z",
+      "finished_at": null,
+      "paid_at": "2026-06-23T04:57:48.066Z"
+    },
+    {
+      "id": "tx-9zp02yr",
+      "invoice_id": "INV-260623-3035",
+      "pelanggan_id": "usr-3",
+      "customer_name": "Budi Santoso",
+      "customer_phone": "085712345678",
+      "customer_address": "Rawamangun Regency Blok C4",
+      "cashier_id": "online",
+      "cashier_name": "Online Orders",
+      "items": [
+        {
+          "product_id": "prod-2",
+          "nama_produk": "Cuci Setrika Ekspres",
+          "harga": 12000,
+          "qty": 1,
+          "subtotal": 12000
+        }
+      ],
+      "total_harga": 12000,
+      "status": "diambil",
+      "status_pembayaran": "lunas",
+      "metode_pembayaran": "qris",
+      "created_at": "2026-06-23T05:25:17.881Z",
+      "finished_at": "2026-06-23T05:27:20.511Z",
+      "paid_at": "2026-06-23T05:25:26.656Z"
+    }
+  ],
+  "passwords": {
+    "admin": "admin123",
+    "pegawai": "pegawai123",
+    "budi": "budi123",
+    "ani": "ani123"
+  }
+}
